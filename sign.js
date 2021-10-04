@@ -133,4 +133,9 @@ form.addEventListener("submit", function (event) {
   XHR.send(FD);
 
   event.preventDefault();
+
+  // display success
+
+  let successMsg = document.getElementById("alertSign");
+  successMsg.style.display = "block";
 });

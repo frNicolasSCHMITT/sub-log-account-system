@@ -142,6 +142,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
               mysqli_query($link, $req);
 
       $display_alert = '<p class="green_alert">Signature mise à jour !</p>';
+
           }
 }
 
@@ -203,7 +204,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
   </form>
   <div class="alertCheck">
-    <?php $display_alert ?>
+    <?php echo $display_alert;  ?>
+    <div id="alertSign"><p class="green_alert">Signature mise à jour !</p></div>
   </div>
     <script src="./sign.js"></script>
   </body>
