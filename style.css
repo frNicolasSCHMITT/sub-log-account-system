@@ -1,0 +1,348 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 14px sans-serif;
+}
+
+.formContainer {
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGrp {
+  width: 100%;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 1% 0;
+}
+
+.labelElement {
+  background: #000;
+  color: floralwhite;
+  width: 40%;
+  padding: 1% 0;
+}
+
+.labelElement label {
+  padding: 0% 0% 0% 5%;
+}
+
+.formGroup input {
+  width: 60%;
+  border: none;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+.btn {
+  max-height: 50px;
+  max-width: 120px;
+  padding: 10px 20px;
+  margin: 5%;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submitBtn {
+  color: floralwhite;
+  background-color: limegreen;
+}
+
+.loginBtn {
+  max-width: none;
+  background-color: lightseagreen;
+  color: floralwhite;
+}
+
+.submitBtn:hover {
+  color: limegreen;
+  background-color: floralwhite;
+  border: 2px solid green;
+  text-decoration: underline;
+}
+
+.resetBtn:hover {
+  background: #000;
+  color: floralwhite;
+  text-decoration: underline;
+}
+
+.loginBtn:hover {
+  background-color: floralwhite;
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+.red_alert {
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 2%;
+}
+
+.blue_alert {
+  color: teal;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 2%;
+}
+
+.green_alert {
+  color: green;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 2%;
+}
+
+#fileToUpload {
+  margin: 1% 5%;
+  width: 50%;
+}
+/* CHAT BODY */
+
+.chatBody {
+  display: flex;
+}
+
+.sideSection {
+  width: 90vw;
+  height: 100vh;
+  background: floralwhite;
+}
+
+@media (max-width: 1600px) {
+  .sideSection {
+    width: 85vw;
+  }
+}
+@media (max-width: 1300px) {
+  .sideSection {
+    width: 80vw;
+  }
+}
+/* BurgerTime */
+/* @media (max-width: 1000px) {
+  .sideSection {
+    width: 100vw;
+  }
+} */
+
+/* Header welcome page */
+
+.headerBg {
+  height: 100vh;
+  width: 10vw;
+  background: rgb(32, 32, 32);
+}
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: floralwhite;
+}
+
+@media (max-width: 1600px) {
+  .headerBg {
+    width: 15vw;
+  }
+}
+@media (max-width: 1300px) {
+  .headerBg {
+    width: 20vw;
+  }
+}
+/* BurgerTime */
+/* @media (max-width: 1000px) {
+  .headerBg {
+    display: none;
+  }
+} */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  color: #000;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.picChangeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profileImgSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 5px teal;
+  margin-top: 1vh;
+  position: relative;
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profilePic:hover {
+  opacity: 50%;
+}
+
+.miniImg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 2px teal;
+  background: floralwhite;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#myBtn {
+  cursor: pointer;
+}
+
+.logoutSection {
+  display: flex;
+  align-items: center;
+  color: darkred;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.logoutSection:hover {
+  color: red;
+}
+
+/* ACCOUNT PAGE */
+
+.titleBlock {
+  margin-left: 5vw;
+}
+
+.accountFormGroup {
+  width: 45vw;
+  margin-left: 5vw;
+}
+
+.accountInput {
+  padding: 0;
+}
+
+/* SIGN BOX */
+
+.mise-en-page {
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
+#canvas {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #000;
+  /*
+  position :absolute;
+  top:10px;
+  */
+}
+
+#bt-clear {
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+}
+
+#bt-clear:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#capture {
+  border: 1px solid grey;
+  width: 200px;
+  height: 150px;
+}
+
+.bloc2 {
+  margin-left: 5vw;
+}
+
+.mise-en-page {
+  align-items: center;
+}
+
+.bloc-mise-en-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b64signBtn {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .accountFormGroup {
+    width: 90vw;
+  }
+  .mise-en-page {
+    flex-direction: column;
+  }
+  .bloc2 {
+    margin-left: 0;
+  }
+}
