@@ -132,9 +132,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           }
         }
 
-    }elseif(empty(trim($_POST["data"]))){
-      $data_err = "Please enter a sign.";
-     } else{
+    }elseif(isset($_POST["data"])){
 
       $data = $_POST['data'];
      
@@ -199,7 +197,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <h2>Capture de la signature</h2>
           <div id="capture"></div>
         </div>
-        <input class="btn submitBtn b64signBtn" name="test" type="submit" value="Valider">
+        <div id="b64signBtn" class="btn submitBtn" name="test">Valider</div>
       </div>
     </div>
   </form>

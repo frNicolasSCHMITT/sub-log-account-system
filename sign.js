@@ -103,8 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Accédez à l'élément form …
 
 var form = document.getElementById("myForm");
+var formBtn = document.getElementById("b64signBtn");
 // … et prenez en charge l'événement submit.
-form.addEventListener("submit", function (event) {
+formBtn.addEventListener("click", function (event) {
   var XHR = new XMLHttpRequest();
 
   // Liez l'objet FormData et l'élément form
